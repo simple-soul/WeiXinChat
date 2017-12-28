@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical">
+
+    <include layout="@layout/titlebar3"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="335dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/red_background"/>
+
+        <ImageView
+            android:scaleType="fitXY"
+            android:id="@+id/red_image_head"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:src="@mipmap/ic_launcher"
+            android:layout_width="70dp"
+            android:layout_height="70dp"/>
+
+        <LinearLayout
+            android:id="@+id/layout12"
+            android:layout_margin="5dp"
+            android:layout_below="@+id/red_image_head"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/red_tv_name"
+                android:text="张津涤"
+                android:textColor="#000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <ImageView
+                android:src="@drawable/ping"
+                android:layout_gravity="center"
+                android:layout_marginLeft="2dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/text123"
+            android:text="恭喜发财，大吉大利"
+            android:layout_marginBottom="5dp"
+            android:layout_below="@+id/layout12"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:id="@+id/layout123"
+            android:layout_below="@+id/text123"
+            android:layout_margin="7dp"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/red_tv_money"
+                android:text="0.19"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:textSize="40sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/text_yuan"
+                android:text="元"
+                android:textColor="#000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/red_tv_tv"
+            android:textColor="#5C749F"
+            android:textSize="11sp"
+            android:text="已存入零钱，可直接转账"
+            android:layout_below="@+id/layout123"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/red_tv_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:text="领取"
+        android:textSize="12sp"/>
+
+    <ListView
+        android:id="@+id/red_list"
+        android:layout_width="match_parent"
+        android:divider="@drawable/divider"
+        android:layout_height="match_parent"></ListView>
+</LinearLayout>
